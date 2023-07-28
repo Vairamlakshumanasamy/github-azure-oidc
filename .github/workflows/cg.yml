@@ -10,7 +10,7 @@ jobs:
       runs-on: windows-latest
       steps:
         - name: OIDC Login to Azure Public Cloud with AzPowershell (enableAzPSSession true)
-          uses: azure/actions/login@v1
+          uses: azure/login@v1
           with:
             clientid: ${{ secrets.AZURE_CLIENT_ID }}
             tenantid: ${{ secrets.AZURE_TENANT_ID }}
